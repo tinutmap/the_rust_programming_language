@@ -1,3 +1,4 @@
+mod interactive;
 fn main() {
     let mut s = String::from("Hello");
 
@@ -36,6 +37,8 @@ fn main() {
 
     let (s4, len) = calculate_length(s1);
     println!("{s4} has length of {len}");
+
+    interactive::main();
 }
 
 fn takes_ownership(s: String) {
