@@ -1,6 +1,6 @@
 # Objectives:
 
-- Learning rust following
+- Learning Rust following
   - ~~https://doc.rust-lang.org/book/title-page.html~~ switched to Interactive version https://rust-book.cs.brown.edu/title-page.html since chapter 4.
 - Setting Rust up working with VSCode https://code.visualstudio.com/docs/languages/rust
 
