@@ -42,6 +42,13 @@ pub(crate) fn main() {
     let b2 = b;
     // println!("{}", b); // This is technically safe but still rejected by Rust.
     move_a_box(b2);
+
+    // ----------- <Seft test, if a in stack, it does not lose ownership in print_var()> -----------
+
+    let a = 6;
+    let b = a;
+    print_var(a);
+    println!("{a},{b}");
 }
 fn add_suffix(mut name: String) -> String {
     name.push_str(" Jr.");
@@ -50,4 +57,8 @@ fn add_suffix(mut name: String) -> String {
 
 fn move_a_box(b: Box<i32>) {
     println!("{:?}", b);
+}
+
+fn print_var(var: i32) {
+    println!("var = {var}");
 }
