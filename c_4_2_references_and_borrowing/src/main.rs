@@ -1,3 +1,6 @@
+mod interactive;
+mod quiz;
+
 fn main() {
     let s1 = String::from("Hello");
     let len = calculate_length(&s1);
@@ -36,6 +39,10 @@ fn main() {
 
     let no_dangle_reference = no_dangle();
     println!("{no_dangle_reference}");
+
+    // ----------- <from Interactive module > -----------
+    interactive::main();
+    quiz::main();
 }
 
 fn calculate_length(s: &String) -> usize {
