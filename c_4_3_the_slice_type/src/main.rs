@@ -41,7 +41,7 @@ fn main() {
     let a = [1, 2, 3, 4, 5];
     let slice = &a[..2];
     assert_eq!(slice, [1, 2]); // Passed
-    assert_eq!(slice, [1, 2, 3]); // Failed
+                               // assert_eq!(slice, [1, 2, 3]); // Failed
 }
 
 fn first_word(s: &String) -> usize {
