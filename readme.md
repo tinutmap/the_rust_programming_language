@@ -17,5 +17,5 @@
 - Use below to separate code segments according to book's headings.
 
 ```
-// ----------- <Name_of_heading > -----------
+// ----------- <Name_of_heading> -----------
 ```
